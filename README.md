@@ -5,7 +5,8 @@ This repository documents the architecture, implementation, and analysis of an e
 Running within an isolated, air-gapped VMware Workstation environment, this lab demonstrates enterprise network segmentation using OPNsense Firewall, centralized identity management through Windows Server Active Directory, and centralized log collection, ingestion, and analysis using Splunk Enterprise SIEM.
 
 ## 🏗️ Full Architecture & Workflow
-The environment is designed around enterprise security principles, including network segmentation, centralized authentication, and centralized log management. OPNsense acts as the primary security gateway while Splunk provides complete visibility into security events across the environment.(architecture.png)
+The environment is designed around enterprise security principles, including network segmentation, centralized authentication, and centralized log management. OPNsense acts as the primary security gateway while Splunk provides complete visibility into security events across the environment.
+![Full Architecture & Workflow](architecture.png)
 
 ### 1. Infrastructure & Domain Backbone
 The network is divided into dedicated security zones, with OPNsense serving as the central firewall and gateway. Windows Server manages the Active Directory infrastructure, allowing enterprise endpoints to authenticate through a centralized domain.
